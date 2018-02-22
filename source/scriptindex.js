@@ -12,4 +12,15 @@ function loadInformation(){
     
 }
 
+$.ajax({
+    url: 'https://randomuser.me/api/?results=12&format=json',
+
+    success: function(data){
+        employees = data.results;
+        displayEmployees(employees);
+        console.log(employees);
+    }
+});
+
+
 
