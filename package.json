@@ -1,0 +1,19 @@
+{
+  "name": "mariorrossipage",
+  "version": "1.0.0",
+  "description": "ciao",
+  "main": "eventi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niccoicco9/MariorRossiPage.git"
+  },
+  "author": "Niccolò Tondi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/niccoicco9/MariorRossiPage/issues"
+  },
+  "homepage": "https://github.com/niccoicco9/MariorRossiPage#readme"
+}
