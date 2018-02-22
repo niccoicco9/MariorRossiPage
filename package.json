@@ -17,7 +17,8 @@
   },
   "homepage": "https://github.com/niccoicco9/MariorRossiPage#readme",
   "dependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "jquery": "^3.3.1"
   },
   "devDependencies": {
     "gulp-jshint": "^2.1.0",
