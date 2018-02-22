@@ -1,0 +1,181 @@
+*{
+    margin:0;
+}
+header{
+    margin:0 ;
+    width:100%;
+    height:200px;
+    background-color:rgb(173, 88, 88);
+    position:relative;
+}
+nav ul li a{
+    color:rgb(0, 0, 0);
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    PADDING:10PX;
+}
+nav ul li a:hover{
+    background-color:rgb(255, 121, 121);
+    opacity:0.5;
+}
+nav ul li{
+    float:left;
+    list-style: none;
+    margin-left:5%;
+    padding-top:8%;
+}
+.right{
+    margin-left:60%;
+}
+.right li{
+    margin-top:12%;
+    margin-left:15%;
+}
+main{
+    background-color:black;
+    width:100%;
+    height:500px;
+}
+footer{
+    width:100%;
+    height:126px;
+    background-color:rgb(95, 63, 63);
+}
+section{
+    background-color:rgb(204, 109, 109);
+    width:100%;
+    height:100%;
+    margin-top:10%;
+    margin:0 auto;
+}
+#immagine img{
+    display:block;
+    margin:0 auto;
+    width:50%;
+    padding-top:7%;
+}
+#bordo{
+ width:100%;
+ height:200px;
+ border-color:1px solid white;
+}
+#leftside{
+    width:50%;
+    height:500px;
+    float:left;
+    background-color:rgb(193, 102, 102)
+}
+#rightside{
+    width:50%;
+    height:500px;
+    float:left;
+}
+#descrizione{
+    text-align:center;
+    margin:0 auto;
+    font-size:40px;
+    font-family:Arial, Helvetica, sans-serif;
+    MARGIN-TOP:3%;
+}
+#informazioni{
+    text-align:center;
+    margin:0 auto;
+    padding-top:25%;
+    font-size:20px;
+    height:60%;
+}
+#informazioni p{
+    margin-top:2%;
+}
+#principale{
+    float:left;
+    text-align:justify;
+    width:50%;
+    text-align:center;
+    height:100%;
+    font-size:15px;
+    
+}
+#contactmain{
+    
+    height:500px;
+    float:left;
+
+}
+input[type=text], select,input[type=email],input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color:#ff8585;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+
+#contactform{
+    border-radius: 5px;
+    padding: 20px;
+    margin-left:17.5%;
+}
+.decoration{
+    background-color:#e69191;
+    width:65%;
+    height:90;
+    margin:0 auto;
+    text-align:center;
+    margin-top:-5%;
+    position:relative;
+}
+.decoration p{
+    font-family: 'Playfair Display SC', serif;
+}
+.descrizioneunder {
+    font-size:13px;
+    text-align:justify;
+    padding:8px;
+}
+#contactform{
+    border-radius: 5px;
+    padding: 20px;
+    margin-left:17.5%;
+    padding-right:22%;
+}
+#secondario ul li{
+    list-style:none;
+    text-align:center;
+
+}
+#secondario ul{
+    padding-top:3%;
+    margin:0 auto;
+}
+#principale{
+    float:left;
+    text-align:justify;
+    width:50%;
+    text-align:center;
+    height:100%;
+    font-size:15px;
+    height:50%;
+    padding-top:4%;
+}
+#contactmain{
+    
+    height:500px;
+    float:left;
+
+}
