@@ -63,13 +63,15 @@ section{
 #leftside{
     width:50%;
     height:500px;
-    float:left;
-    background-color:rgb(193, 102, 102)
+    position:absolute;
+    background-color:rgb(193, 102, 102);
+    
 }
 #rightside{
     width:50%;
     height:500px;
-    float:left;
+    float:right;
+    
 }
 #descrizione{
     text-align:center;

@@ -8,19 +8,34 @@ function loadInformation(){
     document.getElementById('figuregen').src = persona.picture.large; 
     document.getElementById('addressgen').textContent = persona.location.street + ', ' + persona.location.city + ' ' + persona.location.postcode + ', ' + persona.location.state; 
     document.getElementById('emailgen').textContent = persona.email;   
-    document.getElementById('phonegen').textContent = persona.phone;   
+    document.getElementById('phonegen').textContent = persona.phone;  
+     
     
 }
 
 $.ajax({
-    url: 'https://randomuser.me/api/?results=12&format=json',
-
-    success: function(data){
-        employees = data.results;
-        displayEmployees(employees);
-        console.log(employees);
+    url: 'https://randomuser.me/api/',
+    dataType: 'json',
+    success: function(data) {
+      console.log(data);
     }
+  });
+
+  $('#postDati').click(function(){
+    
+    var persona = {
+      "name":{
+      "title":"mr",
+      "first":"dries",
+      "last":"mertens"
+      },
+    };
+  $.post("http://localhost:3000/results", persona)
+  .done(function(data){
+    alert("Data Loaded:" + data);
+  });
 });
+  
 
 
 
