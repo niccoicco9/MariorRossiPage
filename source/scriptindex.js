@@ -23,14 +23,14 @@ $.ajax({
 
   $('#postDati').click(function(){
 
-    var persona = {
+    var persondue = {
       "name":{
       "title":"mr",
       "first":"dries",
       "last":"mertens"
       },
     };
-  $.post("http://localhost:3000/results", persona)
+  $.post("http://localhost:3000/results", personadue)
   .done(function(data){
     alert("Data Loaded:" + data);
   });
