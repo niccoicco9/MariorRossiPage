@@ -22,7 +22,7 @@ $.ajax({
   });
 
   $('#postDati').click(function(){
-    
+
     var persona = {
       "name":{
       "title":"mr",
