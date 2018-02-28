@@ -1,3 +1,6 @@
+/*jshint esversion: 6 */
+
+
 function loadInformation(){
     var persona = extractRandomUser('It');
 
@@ -9,33 +12,37 @@ function loadInformation(){
     document.getElementById('addressgen').textContent = persona.location.street + ', ' + persona.location.city + ' ' + persona.location.postcode + ', ' + persona.location.state; 
     document.getElementById('emailgen').textContent = persona.email;   
     document.getElementById('phonegen').textContent = persona.phone;  
-     
-    
-}
+  
+  }
 
-$.ajax({
-    url: 'https://randomuser.me/api/',
-    dataType: 'json',
-    success: function(data) {
-      console.log(data);
-    }
-  });
 
   $('#postDati').click(function(){
 
-    var persondue = {
+    var persona = {
       "name":{
       "title":"mr",
       "first":"dries",
       "last":"mertens"
       },
     };
-  $.post("http://localhost:3000/results", personadue)
+  $.post("http://localhost:3000/results", persona)
   .done(function(data){
     alert("Data Loaded:" + data);
   });
 });
+
+
+
+
+jQuery(document).ready(function($) {  
+
+
+  $(window).load(function(){
+    $('#preloader').fadeOut('slow',function(){$(this).remove();});
+   
+  });
   
-
-
-
+  });
+  setTimeout(function() {
+    $('#preloader').fadeOut('slow');
+}, 1000);

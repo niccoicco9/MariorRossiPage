@@ -17,3 +17,4 @@ gulp.task('copy', function(){
     gulp.src('source/*.*').pipe(gulp.dest('dist'));
 
 });
+

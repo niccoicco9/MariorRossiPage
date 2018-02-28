@@ -12,7 +12,17 @@
 
 
 </head>
-<body onload="loadInformation();">
+
+<div class="js"><!--this is supposed to be on the HTML element but codepen won't let me do it-->
+    <body>
+      <div id="preloader"></div>
+      
+      
+    </body>
+    
+  </div><!--END: HTML element-->
+
+<body onload="loading();">
     <header>
             <nav>
                     <ul>
@@ -39,6 +49,8 @@
                 <div id="immagine">
                         
                     <img id="figuregen">
+                  
+
                 
             </div>
                 <div id="descrizione">
@@ -50,13 +62,14 @@
             </div>
             <div id="rightside">
                 <div id="informazioni">
-                    <p id="namegen2"></p>
-                    <p id="emailgen"></p>
-                    <p id="phonegen"></p>
-                    <p id="addressgen"></p>
+                   <h3> Name:</h3><p id="namegen2"></p>
+                   <h3>E-mail:</h3> </h3> <p id="emailgen"></p>
+                   <h3> Phone</h3><p id="phonegen"></p>
+                   <h3>City:</h3> <p id=city></p>
+                   <h3>Address:</h3> <p id="addressgen"></p>
                     
                     
-
+                    
 
                 </div>
 
@@ -89,6 +102,7 @@
 </body>
 <script src="../node_modules/jquery/dist/jquery.js"></script>
 <script src="generatorePersona.js"></script>
+<script src="user.js"></script>
 <script src="scriptindex.js"></script>
 
 </html>

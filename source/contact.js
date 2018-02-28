@@ -1,17 +1,25 @@
 $('#invioDati').click(function(){
-        var firstname= $('#firstname').val();
-        var lastname = $('#lastname').val();
+        var fname= $('#fname').val();
+        var lname = $('#lname').val();
         var email = $('#email').val();
         var phone = $('#phone').val();
 
         var persona = {
             "name": {
-                "first": name,
-                "last": lastname
+                "first": fname,
+                "last": lname,
             },
-            "email":email
+            "email":email,
+             
+        
+            "phone":phone,
+            
+    
                 
-            },
-        };
-        $post('http://localhost:3000/results');
-})
+            
+         };
+        $.post("http://localhost:3000/results", persona)
+         .done(function(data){
+          alert("Data Loaded:" + data);
+  });
+});

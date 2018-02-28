@@ -2,18 +2,16 @@
     margin:0;
 }
 header{
-    margin:0 ;
-    width:100%;
     height:200px;
     background-color:rgb(173, 88, 88);
-    position:relative;
 }
 nav ul li a{
     color:rgb(0, 0, 0);
     font-size:30px;
     font-family:Arial, Helvetica, sans-serif;
     text-decoration:none;
-    PADDING:10PX;
+    padding:10px;
+   
 }
 nav ul li a:hover{
     background-color:rgb(255, 121, 121);
@@ -28,9 +26,15 @@ nav ul li{
 .right{
     margin-left:60%;
 }
+.span{
+    color:red;
+}
 .right li{
     margin-top:12%;
     margin-left:15%;
+}
+.right a{
+    padding-top:30px;
 }
 main{
     background-color:black;
@@ -65,30 +69,31 @@ section{
     height:500px;
     position:absolute;
     background-color:rgb(193, 102, 102);
-    
 }
 #rightside{
     width:50%;
     height:500px;
     float:right;
-    
 }
 #descrizione{
-    text-align:center;
-    margin:0 auto;
     font-size:40px;
     font-family:Arial, Helvetica, sans-serif;
     MARGIN-TOP:3%;
 }
 #informazioni{
     text-align:center;
-    margin:0 auto;
-    padding-top:25%;
+    padding-top:15%;
     font-size:20px;
+    text-transform: uppercase;
     height:60%;
 }
 #informazioni p{
     margin-top:2%;
+    
+}
+#informazioni h3{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration:underline;
 }
 #principale{
     float:left;
@@ -97,14 +102,10 @@ section{
     text-align:center;
     height:100%;
     font-size:15px;
-    
 }
 #contactmain{
-    padding-top:3%;
-    margin-left:12%;
-    height:500px;
-    float:left;
-
+    margin-left:5%;
+    
 }
 input[type=text], select,input[type=email],input[type=number]{
     width: 100%;
@@ -115,7 +116,6 @@ input[type=text], select,input[type=email],input[type=number]{
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 input[type=submit] {
     width: 100%;
     background-color:#ff8585;
@@ -126,9 +126,9 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-
-
-
+#message{
+    height:100px;
+}
 #contactform{
     border-radius: 5px;
     padding: 20px;
@@ -137,7 +137,6 @@ input[type=submit] {
 .decoration{
     background-color:#e69191;
     width:65%;
-    height:90;
     margin:0 auto;
     text-align:center;
     margin-top:-5%;
@@ -168,7 +167,6 @@ input[type=submit] {
 }
 #principale{
     float:left;
-    text-align:justify;
     width:50%;
     text-align:center;
     height:100%;
@@ -177,8 +175,118 @@ input[type=submit] {
     padding-top:4%;
 }
 #contactmain{
-    
     height:500px;
     float:left;
+}
+
+.js div#preloader { position: fixed; left: 0; top: 0; z-index: 999; width: 100%; height: 100%; overflow: visible; background: #fff url('https://media.giphy.com/media/ZxYvVpKG6tR5pGYVPK/giphy.gif') no-repeat center center; }
+
+
+
+/*
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    text-align:center;
+}
+
+header{
+    display:flex;
+    font-size:2rem;
+    background-color:rgb(193, 102, 102);
+    padding:0.6rem;
+}
+nav{
+    font-size:1rem;
+    
+    padding:0.5rem;
+    flex:1 0 20%;
+}
+
+nav ul li{
+    display:inline;
+}
+nav ul li a{
+    color:rgb(0, 0, 0);
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    padding:10px;
+}
+nav ul li a:hover{
+    background-color:rgb(255, 121, 121);
+    opacity:0.5;
+}
+nav ul li{
+    float:left;
+    list-style: none;
+    margin-left:5%;
+    padding-top:8%;
+}
+#secondario ul li{
+    list-style:none;
+    text-align:center;
 
 }
+#secondario ul{
+    padding-top:3%;
+    margin:0 auto;
+}
+footer{
+    width:100%;
+    height:126px;
+    background-color:rgb(95, 63, 63);
+}
+.secondario{
+    flex-grow:2;
+}
+main{
+    background-color:black;
+    width:100%;
+    height:562px;
+}
+
+section{
+    background-color:rgb(204, 109, 109);
+    width:100%;
+    height:100%;
+    margin-top:10%;
+    margin:0 auto;
+}
+#immagine img{
+    display:block;
+    margin:0 auto;
+    width:20%;
+    padding-top:7%;
+}
+input[type=text], select,input[type=email],input[type=number]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 80%;
+    background-color:#ff8585;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#rightside{
+    width:50%;
+    
+    
+}
+*/
